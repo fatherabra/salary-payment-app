@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Salary Calculator & Payout system $</title>
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet">
+</head>
+<body id="mainBody">
+  <header>
+    <h1>Salary Calculator<h1>
+  </header>
+  <form id="employeeInfoForm">
+    <input type="text" name="name" id="name" placeholder="Enter First Name">
+    <input type="text" name="jobTitle" id="jobTitle" placeholder="Enter Job Title">
+    <input type="number" name="annualSalary" id="annualSalary" placeholder="Enter Annual Salary">
+    <input type="text" name="wallet" id="wallet" placeholder="Enter Wallet Address">
+    <button type="submit" id="submitButton">Submit</button>
+  </form><br />
+  <table>
+    <thead>
+      <tr>
+        <th>ID Number</th>
+        <th>Full Name</th>
+        <th>Job Title</th>
+        <th>Annual Salary</th>
+        <th>Monthly Salary</th>
+        <th>Pay Employee</th>
+      </tr>
+    </thead>
+    <tbody class="js-employeeInfoDisplay">
+      <tr></tr>
+    </tbody>
+  </table>
+  <div align="right" class="js-monthly-total-display">
+    <p id="monthly-total">Monthly Salary Total: 0.00 cUSD</p>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+<script type="text/javascript" src="main.js"></script></body>
+</html>

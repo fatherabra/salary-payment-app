@@ -1,0 +1,47 @@
+table {
+  width: 100%;
+  background-color: lightgray;
+}
+
+
+th {
+  background-color: rgb(96, 93, 93);
+  padding: 10px;
+  text-align: left;
+  font-family: 'Baloo Bhai', cursive;
+  font-size: 25px;
+  margin: 30px;
+  color: white; 
+}
+
+td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid rgb(60, 59, 59);;
+  font-family: 'Baloo Bhai', cursive;
+  font-size: 18px;
+  margin: 30px;  
+}
+
+h2 {
+  font-family: 'Baloo Bhai', cursive;
+  font-size: 25px;
+  margin: 30px;
+  color: rgb(60, 59, 59);
+}
+
+h1 {
+  font-family: 'Baloo Bhai', cursive;
+  font-size: 45px;
+}
+
+body {
+  background-image: url('https://i.ibb.co/L5JmDRm/cash-Bg-Use.png');
+  background-size: cover;
+}
+
+p {
+  font-family: 'Baloo Bhai', cursive;
+  font-size: 30px;
+  margin: 30px;
+}

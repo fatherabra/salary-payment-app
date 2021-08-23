@@ -1,0 +1,95 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_name",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_jobTitle",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_annualSalary",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_wallet",
+				"type": "address"
+			}
+		],
+		"name": "addEmployee",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "employeeCount",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_employeeID",
+				"type": "uint256"
+			}
+		],
+		"name": "getEmployee",
+		"outputs": [
+			{
+				"internalType": "address payable",
+				"name": "wallet",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "name",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "jobTitle",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "employeeID",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "annualSalary",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_employeeID",
+				"type": "uint256"
+			}
+		],
+		"name": "makePayment",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	}
+]
