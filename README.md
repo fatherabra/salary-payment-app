@@ -15,3 +15,24 @@ Switch to the alfajores testnet in the CeloExtensionWallet.
 
 Open your DApp  👇👇👇👇
 
+https://fatherabra.github.io/salary-payment-app/
+
+
+FUNCTIONS INCLUDES 
+
+storage of employee data on the blockchain
+
+calculation of annual salary 
+
+calculation of mothly salary
+
+storage of employees celo address 
+
+payment directly to employee address
+
+and lots more. 
+
+
+
+
+
