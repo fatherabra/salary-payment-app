@@ -1,0 +1,325 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_deadAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "_cUsdTokenAddress",
+				"type": "address"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_wallet",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "_name",
+				"type": "string"
+			}
+		],
+		"name": "addAdmin",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "wallet",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "name",
+				"type": "string"
+			},
+			{
+				"internalType": "bool",
+				"name": "canPay",
+				"type": "bool"
+			},
+			{
+				"internalType": "uint256",
+				"name": "createdOn",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_name",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_jobTitle",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_annualSalary",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_wallet",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "_adminAddress",
+				"type": "address"
+			}
+		],
+		"name": "addEmployee",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "employeeWallet",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "createdOn",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "createdBy",
+				"type": "address"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_adminAddress",
+				"type": "address"
+			}
+		],
+		"name": "changeCanPayStatus",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "status",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "employeeCount",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_adminAddress",
+				"type": "address"
+			}
+		],
+		"name": "getAdminProfile",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "wallet",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "name",
+				"type": "string"
+			},
+			{
+				"internalType": "bool",
+				"name": "canPay",
+				"type": "bool"
+			},
+			{
+				"internalType": "uint256",
+				"name": "createdOn",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_employeeID",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_adminAddress",
+				"type": "address"
+			}
+		],
+		"name": "getEmployee",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "wallet",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "name",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "jobTitle",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "employeeID",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "annualSalary",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "createdOn",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "createdBy",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getOwnerProfile",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "wallet",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_paymentID",
+				"type": "uint256"
+			}
+		],
+		"name": "getPayment",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "employeeID",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "amountPaid",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "paymentID",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "paidOn",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "paidBy",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_employeeID",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_adminAddress",
+				"type": "address"
+			}
+		],
+		"name": "makePayment",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "paymentID",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "amountPaid",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "employeeWallet",
+				"type": "address"
+			}
+		],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "paymentCount",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
